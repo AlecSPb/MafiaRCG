@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RCG.Views.TutorialView"
+             xmlns:infr="clr-namespace:RCG.Infrastructure">
+    <ContentView.BindingContext>
+        <infr:ViewModelLocator/>
+    </ContentView.BindingContext>
+    <ContentView.Content>
+        <Grid BindingContext="{Binding TutorialViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Source="{Binding BGImage}" Aspect="AspectFill" Grid.RowSpan="2"/>
+            <CarouselView ItemsSource="{Binding Instructions}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Label HorizontalTextAlignment="Center" VerticalTextAlignment="Center" VerticalOptions="Center"
+                                   HorizontalOptions="Center" Text="{Binding}" FontSize="Large" BackgroundColor="Black" Opacity="0.75"/>
+                        </Grid>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <Button Margin="10" Text="{Binding Lm.Back}" Command="{Binding BackCommand}" Grid.Row="1"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

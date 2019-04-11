@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:infr="clr-namespace:RCG.Infrastructure"
+             x:Class="RCG.Views.PlayerView">
+    <ContentView.BindingContext>
+        <infr:ViewModelLocator/>
+    </ContentView.BindingContext>
+    <ContentView.Content>
+        <Grid BindingContext="{Binding PlayerViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="6*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Label HorizontalOptions="Center" VerticalOptions="Center" Text="{Binding RoleStr}" FontSize="Medium"/>
+            <Label HorizontalOptions="End" VerticalOptions="Center" Text="{Binding AliveStr}"/>
+            <Image Grid.Row="1" Source="{Binding RoleImage}" Margin="5" Aspect="AspectFill"/>
+            <Image Grid.RowSpan="3"  Source="{Binding BloodImg}" Opacity="{Binding BloodOpacity}" Margin="5" Aspect="AspectFill"/>
+            <Label Grid.Row="1" Text="{Binding Lm.KilledPl}" IsVisible="{Binding KilledVisible}" FontSize="Large" FontAttributes="Bold"
+                   TextColor="DarkRed" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Button Margin="10" Text="{Binding Lm.Disconnect}" Command="{Binding BackCommand}" Grid.Row="2"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

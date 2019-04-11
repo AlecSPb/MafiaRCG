@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RCG.Views.RoleView"
+             xmlns:infr="clr-namespace:RCG.Infrastructure">
+    <ContentView.BindingContext>
+        <infr:ViewModelLocator/>
+    </ContentView.BindingContext>
+    <ContentView.Content>
+        <Grid BindingContext="{Binding TutorialViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <CarouselView ItemsSource="{Binding Roles}">
+                <CarouselView.ItemTemplate>
+                    <DataTemplate>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="*"/>
+                                <RowDefinition Height="4*"/>
+                                <RowDefinition Height="4*"/>
+                            </Grid.RowDefinitions>
+                            <Label HorizontalTextAlignment="Center" VerticalOptions="Center" HorizontalOptions="Center"
+                                   Text="{Binding RoleStr}" FontSize="Large"/>
+                            <Image Source="{Binding Image}" Aspect="AspectFill" Grid.Row="1" Grid.RowSpan="2"/>
+                            <Label Text="{Binding RoleDes}" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"
+                                   VerticalOptions="Center" HorizontalOptions="Center" Grid.Row="2" FontSize="Medium" BackgroundColor="Black" Opacity="0.75"/>
+                        </Grid>
+                    </DataTemplate>
+                </CarouselView.ItemTemplate>
+            </CarouselView>
+            <Button Margin="10" Text="{Binding Lm.Back}" Command="{Binding BackCommand}" Grid.Row="1"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

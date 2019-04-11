@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:RCG"
+             xmlns:infr="clr-namespace:RCG.Infrastructure"
+             x:Class="RCG.Views.MainView">
+    <ContentView.BindingContext>
+        <infr:ViewModelLocator/>
+    </ContentView.BindingContext>
+    <StackLayout BindingContext="{Binding MainViewModel}">
+        <Image VerticalOptions="Start" Source="{Binding BackgroundImage}"/>
+        <Button Text="{Binding Lm.Host}" HorizontalOptions="CenterAndExpand" Margin="0, 20, 0, 0"
+                Command="{Binding HostCommand}"/>
+        <Button Text="{Binding Lm.Player}" HorizontalOptions="CenterAndExpand" Margin="0, 20, 0, 0"
+                Command="{Binding PlayerCommand}"/>
+        <Button Text="{Binding Lm.Tutorial}" HorizontalOptions="CenterAndExpand" Margin="0, 20, 0, 0"
+                Command="{Binding TutorialCommand}"/>
+        <Button Text="{Binding Lm.Settings}" HorizontalOptions="CenterAndExpand" Margin="0, 20, 0, 0"
+                Command="{Binding SettingsCommand}"/>
+        <Button Text="{Binding Lm.Exit}" HorizontalOptions="CenterAndExpand" Margin="0, 20, 0, 0"
+                Command="{Binding ExitCommand}"/>
+    </StackLayout>
+</ContentView>

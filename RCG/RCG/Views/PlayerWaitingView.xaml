@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:infr="clr-namespace:RCG.Infrastructure"
+             x:Class="RCG.Views.PlayerWaitingView">
+    <ContentView.BindingContext>
+        <infr:ViewModelLocator/>
+    </ContentView.BindingContext>
+    <ContentView.Content>
+        <Grid BindingContext="{Binding PlayerViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="4*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.RowSpan="3" Source="{Binding BackgroundImage}" Aspect="AspectFill"/>
+            <Label HorizontalOptions="Center" VerticalOptions="Start" Margin="0, 20, 0, 0" Text="{Binding CountStr}" FontSize="Medium"/>
+            <ActivityIndicator IsRunning="True" Grid.Row="1"/>
+            <Button Margin="10" VerticalOptions="End" Text="{Binding Lm.Disconnect}" Grid.Row="2" Command="{Binding BackCommand}"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:infr="clr-namespace:RCG.Infrastructure"
+             x:Class="RCG.Views.HostTemplateView">
+    <ContentView.BindingContext>
+        <infr:ViewModelLocator/>
+    </ContentView.BindingContext>
+    <ContentView.Content>
+        <Grid BindingContext="{Binding HostTemplateViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Image Grid.RowSpan="6" Grid.ColumnSpan="2" Source="{Binding BackgroundImage}" Aspect="AspectFill"/>
+            <Entry Margin="30" Placeholder="{Binding Lm.RoomTitle}" VerticalOptions="CenterAndExpand" Grid.ColumnSpan="2" Text="{Binding HostTemplate.Name}" Opacity="0.8"/>
+            <Entry Margin="30" VerticalOptions="CenterAndExpand" Placeholder="{Binding Lm.RoomPass}" Grid.ColumnSpan="2" Grid.Row="1" Text="{Binding HostTemplate.Password}" Opacity="0.8"/>
+            <Label Margin="30, 0, 0, 0" VerticalOptions="Center" Grid.Row="2" Text="{Binding Lm.Doctor}"/>
+            <Switch VerticalOptions="Center" HorizontalOptions="End" Margin="0, 0, 10, 0" Grid.Row="2"  IsToggled="{Binding HostTemplate.IsDoctor}"/>
+            <Label Margin="30, 0, 0, 0" VerticalOptions="Center" Grid.Row="2" Grid.Column="1" Text="{Binding Lm.Detective}"/>
+            <Switch VerticalOptions="Center" HorizontalOptions="End" Margin="0, 0, 10, 0" Grid.Row="2" Grid.Column="1" IsToggled="{Binding HostTemplate.IsDetective}"/>
+            <Label Margin="30, 0, 0, 0" VerticalOptions="Center" Grid.Row="3" Text="{Binding Lm.Girl}"/>
+            <Switch VerticalOptions="Center" HorizontalOptions="End" Margin="0, 0, 10, 0" Grid.Row="3" IsToggled="{Binding HostTemplate.IsGirl}"/>
+            <Label Margin="30, 0, 0, 0" VerticalOptions="Center" Grid.Row="3" Grid.Column="1" Text="{Binding Lm.Assassin}"/>
+            <Switch VerticalOptions="Center" HorizontalOptions="End" Margin="0, 0, 10, 0" Grid.Row="3" Grid.Column="1" IsToggled="{Binding HostTemplate.IsManiac}"/>
+            <Label Margin="30, 0, 0, 0" VerticalOptions="Center" Grid.Row="4" Text="{Binding Lm.Immortal}"/>
+            <Switch VerticalOptions="Center" HorizontalOptions="End" Margin="0, 0, 10, 0" Grid.Row="4" IsToggled="{Binding HostTemplate.IsImmortal}"/>
+            <Label Margin="30, 0, 0, 0" VerticalOptions="Center" Grid.Row="4" Grid.Column="1" Text="{Binding Lm.Don}"/>
+            <Switch VerticalOptions="Center" HorizontalOptions="End" Margin="0, 0, 10, 0" Grid.Row="4" Grid.Column="1" IsToggled="{Binding HostTemplate.IsDon}"/>
+            <Button VerticalOptions="CenterAndExpand" Margin="30" Text="{Binding Lm.OpenRoom}" Grid.Row="5" Command="{Binding OpenCommand}"/>
+            <Button VerticalOptions="CenterAndExpand" Margin="30" Text="{Binding Lm.Cancel}" Grid.Row="5" Grid.Column="1" Command="{Binding CancelCommand}"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

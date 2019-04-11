@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RCG.Views.SettingsView"
+             xmlns:infr="clr-namespace:RCG.Infrastructure">
+    <ContentView.BindingContext>
+        <infr:ViewModelLocator/>
+    </ContentView.BindingContext>
+    <ContentView.Content>
+        <Grid BindingContext="{Binding SettingsViewModel}">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.RowSpan="2" Source="{Binding BGImage}" Aspect="AspectFill"/>
+            <StackLayout Margin="20">
+                <Grid>
+                    <Label Text="{Binding Lm.Language}" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Button Text="{Binding Settings.Language}" Command="{Binding LanguageCommand}" VerticalOptions="Center" HorizontalOptions="End"/>
+                </Grid>
+                <Grid Margin="0, 20, 0, 0">
+                    <Label Text="{Binding Lm.DeathVibr}" VerticalOptions="Center" HorizontalOptions="Start" FontSize="Medium"/>
+                    <Switch IsToggled="{Binding Settings.IsVibration}" VerticalOptions="Center" HorizontalOptions="End"/>
+                </Grid>
+                <Button Margin="0, 20, 0, 0" Text="{Binding ReportBtnStr}" Command="{Binding HideCommand}" VerticalOptions="Center" HorizontalOptions="Center"/>
+                    <Grid Margin="10, 10, 10, 0" IsVisible="{Binding ReportVisible}">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="4*"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition/>
+                            <ColumnDefinition/>
+                        </Grid.ColumnDefinitions>
+                        <Button Text="{Binding Subj}" Command="{Binding ChooseSubjCommand}" HorizontalOptions="Center" VerticalOptions="Center" FontSize="Micro"/>
+                        <Button Grid.Column="1" Text="{Binding Lm.AttImage}" Command="{Binding ChooseScreenshotCommand}"
+                                HorizontalOptions="Center" VerticalOptions="Center" FontSize="Micro" BackgroundColor="{Binding AttColor}"/>
+                        <Editor Placeholder="{Binding Lm.Message}" Text="{Binding Body}" Grid.Row="1" Grid.ColumnSpan="2" Margin="10"
+                                BackgroundColor="DarkRed" Opacity="0.8" PlaceholderColor="WhiteSmoke" TextColor="WhiteSmoke"/>
+                        <Button Grid.Row="2" Grid.ColumnSpan="2"  Text="{Binding Lm.Send}"
+                                Command="{Binding ReportCommand}"
+                                VerticalOptions="Center" HorizontalOptions="Center"/>
+                    </Grid>
+                <Label Margin="0, 50, 0, 0" Text="©Kompasha Entertainment" Opacity="0.5" FontSize="Micro" HorizontalOptions="Center" VerticalOptions="Center"/>
+            </StackLayout>
+            <Button Margin="10" Text="{Binding Lm.Back}" Command="{Binding BackCommand}" Grid.Row="1"/>
+        </Grid>
+    </ContentView.Content>
+</ContentView>

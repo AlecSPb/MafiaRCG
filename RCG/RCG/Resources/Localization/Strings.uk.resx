@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alibi" xml:space="preserve">
+    <value>Алібі</value>
+  </data>
+  <data name="Alive" xml:space="preserve">
+    <value>Живі</value>
+  </data>
+  <data name="Arrested" xml:space="preserve">
+    <value>Заарештований</value>
+  </data>
+  <data name="Assassin" xml:space="preserve">
+    <value>Вбивця</value>
+  </data>
+  <data name="AssassinDes" xml:space="preserve">
+    <value>Доступний починаючи з 9 гравців. Повинен вбити всіх для перемоги</value>
+  </data>
+  <data name="AssassinWon" xml:space="preserve">
+    <value>Вбивця переміг</value>
+  </data>
+  <data name="AttImage" xml:space="preserve">
+    <value>Прикріпіти зображення</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Назад</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Скасувати</value>
+  </data>
+  <data name="CitizensWon" xml:space="preserve">
+    <value>Мирні жителі перемогли</value>
+  </data>
+  <data name="Civilian" xml:space="preserve">
+    <value>Мирний житель</value>
+  </data>
+  <data name="CivilianDes" xml:space="preserve">
+    <value>Звичайна людина. Спить уночі. Єдине, що вміє - голосувати</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>День</value>
+  </data>
+  <data name="DeathVibr" xml:space="preserve">
+    <value>Вібрація при смерті</value>
+  </data>
+  <data name="Detective" xml:space="preserve">
+    <value>Детектив</value>
+  </data>
+  <data name="DetectiveDes" xml:space="preserve">
+    <value>Остання надія міста. Уночі може дізнатися сторону гравця (темна / світла)</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>Роз'єднатись</value>
+  </data>
+  <data name="Doctor" xml:space="preserve">
+    <value>Лікар</value>
+  </data>
+  <data name="DoctorDes" xml:space="preserve">
+    <value>Ангел охоронець міста. Вночі може врятувати одного гравця. Не може лікувати одного і того ж гравця 2 ночі підряд</value>
+  </data>
+  <data name="Don" xml:space="preserve">
+    <value>Дон</value>
+  </data>
+  <data name="DonDes" xml:space="preserve">
+    <value>Босс мафії. Уночі моде дізнатися, чи є гравець комісаром</value>
+  </data>
+  <data name="DrawVote" xml:space="preserve">
+    <value>Схоже на те, що сьогодні ніхто не сяде у в'язницю</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Вихід</value>
+  </data>
+  <data name="ExitQ" xml:space="preserve">
+    <value>Вийти?</value>
+  </data>
+  <data name="Girl" xml:space="preserve">
+    <value>Коханка</value>
+  </data>
+  <data name="GirlDes" xml:space="preserve">
+    <value>Дає гравцю алібі..., та не забутню ніч. Вночі моде померти тільки з вибраним гравцем. Не може дати алібі одному й тому ж гравцю дві ночі підряд</value>
+  </data>
+  <data name="Heal" xml:space="preserve">
+    <value>Лікувати</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Сховати</value>
+  </data>
+  <data name="Host" xml:space="preserve">
+    <value>Ведучий</value>
+  </data>
+  <data name="HowToPlay" xml:space="preserve">
+    <value>Як грати</value>
+  </data>
+  <data name="Immortal" xml:space="preserve">
+    <value>Невмирущий</value>
+  </data>
+  <data name="ImmortalDes" xml:space="preserve">
+    <value>Доступний починаючи з 9 гравців. Звичайний мирний житель, який не може померти вночі</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>Введіть ім'я</value>
+  </data>
+  <data name="InputPass" xml:space="preserve">
+    <value>Введіть пароль від кімнати</value>
+  </data>
+  <data name="Kill" xml:space="preserve">
+    <value>Вбити</value>
+  </data>
+  <data name="Killed" xml:space="preserve">
+    <value>Вбиті</value>
+  </data>
+  <data name="KilledPl" xml:space="preserve">
+    <value>Вбитий</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Мова</value>
+  </data>
+  <data name="Mafia" xml:space="preserve">
+    <value>Мафія</value>
+  </data>
+  <data name="MafiaDes" xml:space="preserve">
+    <value>Повинна захопити місто. Вбиває вночі. Переховується вдень</value>
+  </data>
+  <data name="MafiaWon" xml:space="preserve">
+    <value>Мафія перемогла</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Повідомлення</value>
+  </data>
+  <data name="NameNotEmpty" xml:space="preserve">
+    <value>Ім'я не може бути порожнім</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Далі</value>
+  </data>
+  <data name="NichtGirl" xml:space="preserve">
+    <value>Ніч - Каханка</value>
+  </data>
+  <data name="NightDetecive" xml:space="preserve">
+    <value>Ніч - Детектив</value>
+  </data>
+  <data name="NightDoctor" xml:space="preserve">
+    <value>Ніч - Лікар</value>
+  </data>
+  <data name="NightDon" xml:space="preserve">
+    <value>Ніч - Дон</value>
+  </data>
+  <data name="NightMafia" xml:space="preserve">
+    <value>Ніч - Мафія</value>
+  </data>
+  <data name="NightManiac" xml:space="preserve">
+    <value>Ніч - Вбивця</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>Ні</value>
+  </data>
+  <data name="NobodyDied" xml:space="preserve">
+    <value>Ніхто сьогодні не помер</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>Немає зв'язку з Інтернетом</value>
+  </data>
+  <data name="NotEnoghPlayers" xml:space="preserve">
+    <value>Не вистачає гравців, щоб почати</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>ОК</value>
+  </data>
+  <data name="OpenRoom" xml:space="preserve">
+    <value>Відчинити кімнату</value>
+  </data>
+  <data name="Player" xml:space="preserve">
+    <value>Гравець</value>
+  </data>
+  <data name="PlayersConnected" xml:space="preserve">
+    <value>Гравців приєдналося</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Повідомлення про помилку</value>
+  </data>
+  <data name="ReportTitle" xml:space="preserve">
+    <value>Повідомлення про помилку / Побажання</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Скинути</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Ролі</value>
+  </data>
+  <data name="RoomPass" xml:space="preserve">
+    <value>Пароль від кімнати</value>
+  </data>
+  <data name="RoomTitle" xml:space="preserve">
+    <value>Назва кімнати</value>
+  </data>
+  <data name="RoomTitleNotEmpty" xml:space="preserve">
+    <value>Назва кімнати не може бути порожнью</value>
+  </data>
+  <data name="Rule1" xml:space="preserve">
+    <value>Зберіть друзів (Найменша кількість гравців - 6)</value>
+  </data>
+  <data name="Rule2" xml:space="preserve">
+    <value>Выберіть ведучого</value>
+  </data>
+  <data name="Rule3" xml:space="preserve">
+    <value>Під'єднайтеся до єдиної мережи wi-fi (Деякі громадські мережи можуть не підходити). Створіть кімнату та під'єднайтеся</value>
+  </data>
+  <data name="Rule4" xml:space="preserve">
+    <value>Дотримуйтесь вказівок ведучого</value>
+  </data>
+  <data name="Rule5" xml:space="preserve">
+    <value>Спілкуйтесь та розважайтесь!</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Відправити</value>
+  </data>
+  <data name="Sending" xml:space="preserve">
+    <value>Відправляється</value>
+  </data>
+  <data name="ServerStoped" xml:space="preserve">
+    <value>Сервер зупинився</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Налаштування</value>
+  </data>
+  <data name="StartGame" xml:space="preserve">
+    <value>Почати гру</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Зупунити</value>
+  </data>
+  <data name="ToMainMenu" xml:space="preserve">
+    <value>Вийти до головного меню</value>
+  </data>
+  <data name="Tutorial" xml:space="preserve">
+    <value>Вказівки</value>
+  </data>
+  <data name="Vote" xml:space="preserve">
+    <value>Голосування</value>
+  </data>
+  <data name="Wish" xml:space="preserve">
+    <value>Побажання</value>
+  </data>
+  <data name="WrongPass" xml:space="preserve">
+    <value>Помилковий пароль</value>
+  </data>
+  <data name="WrongWifi" xml:space="preserve">
+    <value>Данна мережа не підходить для гри</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Так</value>
+  </data>
+</root>
