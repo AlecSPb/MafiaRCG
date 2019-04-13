@@ -225,6 +225,7 @@ namespace RCG.Models
             {
                 list[0].Alive = false;
                 list[0].SendStatus(Status.Killed);
+                SendCount();
                 res = string.Concat(lm.GetString("Arrested"), " - ", list[0].Name);
             }
             var lucky = Players.Where(p => p.IsAlibi).SingleOrDefault();
@@ -245,6 +246,7 @@ namespace RCG.Models
                 player.Killed = false;
                 player.Alive = false;
                 player.SendStatus(Status.Killed);
+                SendCount();
             }
             Notify("AliveStr");
             Victory();
