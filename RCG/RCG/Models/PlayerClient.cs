@@ -23,9 +23,7 @@ namespace RCG.Models
         public List<string> ServerList { get => hosts.Keys.ToList(); }
         public int PlayerCount { get => playerCount; private set { playerCount = value; Notify(); } }
 
-        public PlayerClient()
-        {
-        }
+        public PlayerClient() { }
 
         public void Listen()
         {

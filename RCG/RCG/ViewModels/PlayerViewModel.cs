@@ -105,7 +105,8 @@ namespace RCG.ViewModels
                     case Status.MafiaWon:
                     case Status.CitizensWon:
                     case Status.AssassinWon:
-                        ViewLocator.MainPage.DisplayAlert(string.Empty, Lm.GetString(player.Status.ToString()), Lm.GetString("Ok"));
+                        Device.BeginInvokeOnMainThread(() => ViewLocator.MainPage.DisplayAlert(string.Empty, Lm.GetString(player.Status.ToString()), Lm.GetString("Ok")));
+                        Device.BeginInvokeOnMainThread(() => Back(null));
                         break;
                     case Status.Killed:
                         if (SaveObject.Instance.Settings.IsVibration)
@@ -114,6 +115,7 @@ namespace RCG.ViewModels
                         KilledVisible = true;
                         break;
                     case Status.Disconnected:
+                        Device.BeginInvokeOnMainThread(() => ViewLocator.MainPage.DisplayAlert(string.Empty, Lm.GetString("ServerStoped"), Lm.GetString("Ok")));
                         Device.BeginInvokeOnMainThread(() => Back(null));
                         break;
                 }

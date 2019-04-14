@@ -42,14 +42,15 @@ namespace RCG.Models
             var parts = ip.Split('.');
             var list = parts.ToList();
             list.RemoveAt(list.Count - 1);
-            return string.Join(".", parts);
+            return string.Join(".", list);
         }
 
         static List<string> AllIps(string ip)
         {
             List<string> ips = new List<string>();
-            for(int i = 0; i<255; i++)
-                 ips.Add(string.Concat(GetBaseIp(ip), i.ToString()));
+            ip = GetBaseIp(ip);
+            for (int i = 1; i < 255; i++)
+                ips.Add(string.Concat(ip, ".", i.ToString()));
             return ips;
         }
 

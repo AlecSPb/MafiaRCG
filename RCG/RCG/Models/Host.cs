@@ -76,19 +76,23 @@ namespace RCG.Models
 
         void GetPlayer(TcpClient client, BinaryWriter writer)
         {
-            while (true)
-                if (client.GetReader().ReadString() == HostTemplate.Password)
-                {
-                    writer.Write(MessageType.Connected.ToString());
-                    var player = new Player(client);
-                    ThreadPool.QueueUserWorkItem(o => player.DisconnectListener(this));
-                    Players.Add(player);
-                    SendCount();
-                    Notify("CountStr");
-                    break;
-                }
-                else
-                    writer.Write(MessageType.WrongPass.ToString());
+            try
+            {
+                while (true)
+                    if (client.GetReader().ReadString() == HostTemplate.Password)
+                    {
+                        writer.Write(MessageType.Connected.ToString());
+                        var player = new Player(client);
+                        ThreadPool.QueueUserWorkItem(o => player.DisconnectListener(this));
+                        Players.Add(player);
+                        SendCount();
+                        Notify("CountStr");
+                        break;
+                    }
+                    else
+                        writer.Write(MessageType.WrongPass.ToString());
+            }
+            catch { }
         }
 
         void SendCount()
