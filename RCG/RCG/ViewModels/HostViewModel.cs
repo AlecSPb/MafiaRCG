@@ -1,6 +1,7 @@
 ﻿using Acr.UserDialogs;
 using RCG.Infrastructure;
-using RCG.Models;
+using RCG.Main.Infrastructure;
+using RCG.Main.Models;
 using RCG.Views;
 using System;
 using System.Collections.Generic;
@@ -23,8 +24,8 @@ namespace RCG.ViewModels
         ICommand resetCommand;
         ICommand devoteCommand;
 
-        public ImageSource WaitingBackgroundImage { get; } = ImageSource.FromResource("RCG.Resources.Pictures.HostWaiting.jpg", typeof(MainViewModel).Assembly);
-        public ImageSource BackgroundImage { get; } = ImageSource.FromResource("RCG.Resources.Pictures.City.jpg", typeof(MainViewModel).Assembly);
+        public ImageSource WaitingBackgroundImage { get; } = ImageSource.FromResource("RCG.Main.Resources.Pictures.HostWaiting.jpg", typeof(Host).Assembly);
+        public ImageSource BackgroundImage { get; } = ImageSource.FromResource("RCG.Main.Resources.Pictures.City.jpg", typeof(Host).Assembly);
         public Host Host { get => host; set { host = value; Notify(); } }
         public ObservableCollection<Player> Players { get => players; set { players = value; Notify(); } }
         public ICommand StartCommand { get => startCommand ?? (startCommand = new RelayCommand(Start)); }

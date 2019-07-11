@@ -1,8 +1,9 @@
 ﻿using Acr.UserDialogs;
 using RCG.Infrastructure;
-using RCG.Models;
-using RCG.Models.Enums;
-using RCG.Models.SaveLoad;
+using RCG.Main.Infrastructure;
+using RCG.Main.Models;
+using RCG.Main.Models.Enums;
+using RCG.Main.Models.SaveLoad;
 using RCG.Views;
 using System;
 using System.Collections.Generic;
@@ -26,7 +27,7 @@ namespace RCG.ViewModels
         ICommand exitCommand;
         ICommand settingsCommand;
 
-        public ImageSource BackgroundImage { get; } = ImageSource.FromResource("RCG.Resources.Pictures.Background.jpg", typeof(MainViewModel).Assembly);
+        public ImageSource BackgroundImage { get; } = ImageSource.FromResource("RCG.Main.Resources.Pictures.Background.jpg", typeof(Host).Assembly);
         public LocalizationManager Lm => LocalizationManager.GetLocalizationManager();
         public ICommand HostCommand { get => hostCommand ?? (hostCommand = new RelayCommand(Host)); }
         public ICommand PlayerCommand { get => playerCommand ?? (playerCommand = new RelayCommand(Player)); }

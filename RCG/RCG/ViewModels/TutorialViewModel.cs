@@ -1,6 +1,7 @@
-﻿using RCG.Infrastructure;
-using RCG.Models;
-using RCG.Models.Enums;
+﻿using RCG.Main.Infrastructure;
+using RCG.Main.Models;
+using RCG.Main.Models.Enums;
+using RCG.Infrastructure;
 using RCG.Views;
 using System;
 using System.Collections.Generic;
@@ -8,6 +9,7 @@ using System.ComponentModel;
 using System.Text;
 using System.Windows.Input;
 using Xamarin.Forms;
+using RCG.Models;
 
 namespace RCG.ViewModels
 {
@@ -20,7 +22,7 @@ namespace RCG.ViewModels
         public List<RoleVisual> Roles { get; }
         public LocalizationManager Lm => LocalizationManager.GetLocalizationManager();
         public ICommand BackCommand { get => backCommand ?? (backCommand = new RelayCommand(Back)); }
-        public ImageSource BGImage { get; } = ImageSource.FromResource("RCG.Resources.Pictures.Tutorial.jpg", typeof(MainViewModel).Assembly);
+        public ImageSource BGImage { get; } = ImageSource.FromResource("RCG.Main.Resources.Pictures.Tutorial.jpg", typeof(Host).Assembly);
 
         public TutorialViewModel()
         {

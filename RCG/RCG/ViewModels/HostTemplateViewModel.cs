@@ -1,6 +1,7 @@
 ﻿using RCG.Infrastructure;
-using RCG.Models;
-using RCG.Models.SaveLoad;
+using RCG.Main.Infrastructure;
+using RCG.Main.Models;
+using RCG.Main.Models.SaveLoad;
 using RCG.Views;
 using System;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ using System.Threading;
 using System.Windows.Input;
 using Xamarin.Forms;
 
+
 namespace RCG.ViewModels
 {
     class HostTemplateViewModel : IBack
@@ -16,7 +18,7 @@ namespace RCG.ViewModels
         ICommand openCommand;
         ICommand cancelCommand;
 
-        public ImageSource BackgroundImage { get; } = ImageSource.FromResource("RCG.Resources.Pictures.HDBackground.jpg", typeof(MainViewModel).Assembly);
+        public ImageSource BackgroundImage { get; } = ImageSource.FromResource("RCG.Main.Resources.Pictures.HDBackground.jpg", typeof(Host).Assembly);
         public HostTemplate HostTemplate => SaveObject.Instance.HostTemplate;
         public ICommand OpenCommand { get => openCommand ?? (openCommand = new RelayCommand(Open)); }
         public ICommand CancelCommand { get => cancelCommand ?? (cancelCommand = new RelayCommand(Cancel)); }

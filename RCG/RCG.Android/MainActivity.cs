@@ -46,7 +46,7 @@ namespace RCG.Droid
             ActivityCompat.RequestPermissions(this, new String[] { Manifest.Permission.ReadExternalStorage, Manifest.Permission.WriteExternalStorage }, 101);
             while (ContextCompat.CheckSelfPermission(this, Manifest.Permission.WriteExternalStorage) != Permission.Granted)
             { }
-            LocalizationManager.GetLocalizationManager().CurrentCulture = Locale.Default.ToString().Replace('_', '-');
+            //LocalizationManager.GetLocalizationManager().CurrentCulture = Locale.Default.ToString().Replace('_', '-');
             LoadApplication(new App());
             UserDialogs.Init(this);
         }
@@ -61,14 +61,6 @@ namespace RCG.Droid
                 if (resultCode == Result.Ok && data != null)
                 {
                     var res = ContentResolver.OpenInputStream(data.Data);
-                    //List<byte> bytes = new List<byte>(500000);
-                    //int b = res.ReadByte();
-                    //while (b != -1)
-                    //{
-                    //    bytes.Add((byte)b);
-                    //    b = res.ReadByte();
-                    //}
-                    //MemoryStream ms = new MemoryStream(bytes.ToArray());
                     PickImageTaskCompletionSource.SetResult(res);
                 }
                 else

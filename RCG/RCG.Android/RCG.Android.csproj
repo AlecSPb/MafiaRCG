@@ -99,6 +99,10 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
+    <ProjectReference Include="..\..\RCG.Main\RCG.Main.csproj">
+      <Project>{19996fc8-4e31-41a7-bfdd-27d157889999}</Project>
+      <Name>RCG.Main</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RCG\RCG.csproj">
       <Project>{D57AFCAC-38F4-45B3-917B-702247E7A57E}</Project>
       <Name>RCG</Name>

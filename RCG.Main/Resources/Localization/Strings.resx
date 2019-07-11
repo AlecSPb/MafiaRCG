@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="Alibi" xml:space="preserve">
+    <value>Alibi</value>
+  </data>
+  <data name="Alive" xml:space="preserve">
+    <value>Alive</value>
+  </data>
+  <data name="Arrested" xml:space="preserve">
+    <value>Arrested</value>
+  </data>
+  <data name="Assassin" xml:space="preserve">
+    <value>Assassin</value>
+  </data>
+  <data name="AssassinWon" xml:space="preserve">
+    <value>Assassing won</value>
+  </data>
+  <data name="Back" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="CitizensWon" xml:space="preserve">
+    <value>Civilians won</value>
+  </data>
+  <data name="Civilian" xml:space="preserve">
+    <value>Civilian</value>
+  </data>
+  <data name="Day" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="Detective" xml:space="preserve">
+    <value>Detective</value>
+  </data>
+  <data name="Disconnect" xml:space="preserve">
+    <value>Disconnect</value>
+  </data>
+  <data name="Doctor" xml:space="preserve">
+    <value>Doctor</value>
+  </data>
+  <data name="Don" xml:space="preserve">
+    <value>Don</value>
+  </data>
+  <data name="DrawVote" xml:space="preserve">
+    <value>Seems like nobody goes to jail today</value>
+  </data>
+  <data name="Exit" xml:space="preserve">
+    <value>Exit</value>
+  </data>
+  <data name="Girl" xml:space="preserve">
+    <value>Girl</value>
+  </data>
+  <data name="Heal" xml:space="preserve">
+    <value>Heal</value>
+  </data>
+  <data name="Host" xml:space="preserve">
+    <value>Moderator</value>
+  </data>
+  <data name="Immortal" xml:space="preserve">
+    <value>Immortal</value>
+  </data>
+  <data name="InputName" xml:space="preserve">
+    <value>Input Name</value>
+  </data>
+  <data name="InputPass" xml:space="preserve">
+    <value>Input room password</value>
+  </data>
+  <data name="Kill" xml:space="preserve">
+    <value>Kill</value>
+  </data>
+  <data name="Killed" xml:space="preserve">
+    <value>Killed</value>
+  </data>
+  <data name="Mafia" xml:space="preserve">
+    <value>Mafia</value>
+  </data>
+  <data name="MafiaWon" xml:space="preserve">
+    <value>Mafia won</value>
+  </data>
+  <data name="NameNotEmpty" xml:space="preserve">
+    <value>Name can't be empty</value>
+  </data>
+  <data name="Next" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="NichtGirl" xml:space="preserve">
+    <value>Night - Girl</value>
+  </data>
+  <data name="NightDetecive" xml:space="preserve">
+    <value>Night - Detective</value>
+  </data>
+  <data name="NightDoctor" xml:space="preserve">
+    <value>Night - Doctor</value>
+  </data>
+  <data name="NightDon" xml:space="preserve">
+    <value>Night - Don</value>
+  </data>
+  <data name="NightMafia" xml:space="preserve">
+    <value>Night - Mafia</value>
+  </data>
+  <data name="NightManiac" xml:space="preserve">
+    <value>Night - Assassin</value>
+  </data>
+  <data name="NobodyDied" xml:space="preserve">
+    <value>Nobody died tonight</value>
+  </data>
+  <data name="NoInternet" xml:space="preserve">
+    <value>No Internet connection</value>
+  </data>
+  <data name="Ok" xml:space="preserve">
+    <value>OK</value>
+  </data>
+  <data name="OpenRoom" xml:space="preserve">
+    <value>Open Room</value>
+  </data>
+  <data name="Player" xml:space="preserve">
+    <value>Player</value>
+  </data>
+  <data name="PlayersConnected" xml:space="preserve">
+    <value>Players Connected</value>
+  </data>
+  <data name="Reset" xml:space="preserve">
+    <value>Reset</value>
+  </data>
+  <data name="RoomPass" xml:space="preserve">
+    <value>Room Pass</value>
+  </data>
+  <data name="RoomTitle" xml:space="preserve">
+    <value>Room Title</value>
+  </data>
+  <data name="RoomTitleNotEmpty" xml:space="preserve">
+    <value>Room Title can't be empty</value>
+  </data>
+  <data name="Settings" xml:space="preserve">
+    <value>Settings</value>
+  </data>
+  <data name="StartGame" xml:space="preserve">
+    <value>Start Game</value>
+  </data>
+  <data name="Stop" xml:space="preserve">
+    <value>Stop</value>
+  </data>
+  <data name="Tutorial" xml:space="preserve">
+    <value>Tutorial</value>
+  </data>
+  <data name="Vote" xml:space="preserve">
+    <value>Vote</value>
+  </data>
+  <data name="WrongPass" xml:space="preserve">
+    <value>Wrong Password</value>
+  </data>
+  <data name="WrongWifi" xml:space="preserve">
+    <value>Current network is unsuitable</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="ExitQ" xml:space="preserve">
+    <value>Exit?</value>
+  </data>
+  <data name="ToMainMenu" xml:space="preserve">
+    <value>Exit to Main Menu</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="KilledPl" xml:space="preserve">
+    <value>Killed</value>
+  </data>
+  <data name="AssassinDes" xml:space="preserve">
+    <value>Available from 9 players. Must kill everyone to win</value>
+  </data>
+  <data name="CivilianDes" xml:space="preserve">
+    <value>Simple human. Sleeps at night. The only thing he can - vote</value>
+  </data>
+  <data name="DetectiveDes" xml:space="preserve">
+    <value>The last hope of this city. At night can identify player's side (dark / light)</value>
+  </data>
+  <data name="DoctorDes" xml:space="preserve">
+    <value>Guardian angel of this city. At night can save one player. Can't heal the same players two nights in a row</value>
+  </data>
+  <data name="DonDes" xml:space="preserve">
+    <value>Mafia boss. At night checks if one of  the players is detective</value>
+  </data>
+  <data name="GirlDes" xml:space="preserve">
+    <value>Gives an alibi to a player..., and a perfect night. At night can die only with chosen player. Can't give alibi to the same player two nights in a row</value>
+  </data>
+  <data name="ImmortalDes" xml:space="preserve">
+    <value>Available from 9 players. Simple civilian that can't die at night</value>
+  </data>
+  <data name="MafiaDes" xml:space="preserve">
+    <value>Must conquer this city. Kills at night. Hides at daytime</value>
+  </data>
+  <data name="Rule1" xml:space="preserve">
+    <value>Gather with friends (Minimum player count - 6)</value>
+  </data>
+  <data name="Rule2" xml:space="preserve">
+    <value>Choose a moderator</value>
+  </data>
+  <data name="Rule3" xml:space="preserve">
+    <value>Connect to a single wi-fi network (some public networks may not suit). Create room and connect</value>
+  </data>
+  <data name="Rule4" xml:space="preserve">
+    <value>Follow moderator's instructions</value>
+  </data>
+  <data name="Rule5" xml:space="preserve">
+    <value>Communicate and have fun!</value>
+  </data>
+  <data name="HowToPlay" xml:space="preserve">
+    <value>How to play</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Roles</value>
+  </data>
+  <data name="AttImage" xml:space="preserve">
+    <value>Attach image</value>
+  </data>
+  <data name="Hide" xml:space="preserve">
+    <value>Hide</value>
+  </data>
+  <data name="NotEnoghPlayers" xml:space="preserve">
+    <value>Not enough players to start game</value>
+  </data>
+  <data name="Report" xml:space="preserve">
+    <value>Bug report</value>
+  </data>
+  <data name="ReportTitle" xml:space="preserve">
+    <value>Bug report / Wish</value>
+  </data>
+  <data name="Send" xml:space="preserve">
+    <value>Send</value>
+  </data>
+  <data name="Wish" xml:space="preserve">
+    <value>Wish</value>
+  </data>
+  <data name="Message" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="DeathVibr" xml:space="preserve">
+    <value>Death Vibration</value>
+  </data>
+  <data name="ServerStoped" xml:space="preserve">
+    <value>Server stoped</value>
+  </data>
+  <data name="Sending" xml:space="preserve">
+    <value>Sending</value>
+  </data>
+</root>

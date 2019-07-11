@@ -8,9 +8,10 @@ using System.Threading.Tasks;
 using System.Windows.Input;
 using Acr.UserDialogs;
 using RCG.Infrastructure;
-using RCG.Models;
-using RCG.Models.SaveLoad;
+using RCG.Main.Models;
+using RCG.Main.Models.SaveLoad;
 using RCG.Views;
+using RCG.Main.Infrastructure;
 using Xamarin.Forms;
 
 namespace RCG.ViewModels
@@ -28,7 +29,7 @@ namespace RCG.ViewModels
         string subj;
         bool sendEnabled = true;
         Stream attachment;
-        ImageSource bgImage = ImageSource.FromResource("RCG.Resources.Pictures.Settings.jpg", typeof(MainViewModel).Assembly);
+        ImageSource bgImage = ImageSource.FromResource("RCG.Main.Resources.Pictures.Settings.jpg", typeof(Host).Assembly);
 
         public ImageSource BGImage { get => bgImage; set { bgImage = value; Notify(); } } 
         public Settings Settings => SaveObject.Instance.Settings;

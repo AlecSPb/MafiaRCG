@@ -1,7 +1,7 @@
 ﻿using Acr.UserDialogs;
 using RCG.Infrastructure;
-using RCG.Models;
-using RCG.Models.SaveLoad;
+using RCG.Main.Models;
+using RCG.Main.Models.SaveLoad;
 using RCG.Views;
 using System;
 using System.Collections.Generic;
@@ -10,8 +10,9 @@ using System.Text;
 using System.Threading;
 using System.Windows.Input;
 using Xamarin.Forms;
-using RCG.Models.Enums;
+using RCG.Main.Models.Enums;
 using System.Threading.Tasks;
+using RCG.Main.Infrastructure;
 
 namespace RCG.ViewModels
 {
@@ -27,10 +28,10 @@ namespace RCG.ViewModels
         ICommand refreshServersCommand;
         ICommand backCommand;
 
-        public ImageSource BloodImg { get; } = ImageSource.FromResource("RCG.Resources.Pictures.Blood.png", typeof(MainViewModel).Assembly);
-        public ImageSource ServerBG { get; } = ImageSource.FromResource("RCG.Resources.Pictures.ServerList.jpg", typeof(MainViewModel).Assembly);
+        public ImageSource BloodImg { get; } = ImageSource.FromResource("RCG.Main.Resources.Pictures.Blood.png", typeof(Host).Assembly);
+        public ImageSource ServerBG { get; } = ImageSource.FromResource("RCG.Main.Resources.Pictures.ServerList.jpg", typeof(Host).Assembly);
         public ImageSource RoleImage { get => roleImage; set { roleImage = value; Notify(); } } 
-        public ImageSource BackgroundImage { get; } = ImageSource.FromResource("RCG.Resources.Pictures.WaitBackground.jpg", typeof(MainViewModel).Assembly);
+        public ImageSource BackgroundImage { get; } = ImageSource.FromResource("RCG.Main.Resources.Pictures.WaitBackground.jpg", typeof(Host).Assembly);
         public string Password { get; set; } = string.Empty;
         public bool Refreshing { get => refreshing; set { refreshing = value; Notify(); } }
         public double BloodOpacity { get => bloodOpacity; set { bloodOpacity = value; Notify(); } }
@@ -90,7 +91,7 @@ namespace RCG.ViewModels
                 BloodOpacity = 0;
                 KilledVisible = false;
                 Notify("RoleStr");
-                RoleImage = ImageSource.FromResource(string.Concat("RCG.Resources.Pictures.", Player.Role.ToString(), ".jpg"), typeof(MainViewModel).Assembly);
+                RoleImage = ImageSource.FromResource(string.Concat("RCG.Main.Resources.Pictures.", Player.Role.ToString(), ".jpg"), typeof(Host).Assembly);
                 Device.BeginInvokeOnMainThread(ViewLocator.Show<PlayerView>);
             }
             else if (e.PropertyName == "PlayerCount")

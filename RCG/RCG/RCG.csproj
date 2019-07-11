@@ -10,50 +10,6 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Remove="Resources\Background.jpg" />
-    <None Remove="Resources\HDBackground.jpg" />
-    <None Remove="Resources\Pictures\Assassin.jpg" />
-    <None Remove="Resources\Pictures\Blood.png" />
-    <None Remove="Resources\Pictures\City.jpg" />
-    <None Remove="Resources\Pictures\Civilian.jpg" />
-    <None Remove="Resources\Pictures\Detective.jpg" />
-    <None Remove="Resources\Pictures\Doctor.jpg" />
-    <None Remove="Resources\Pictures\Don.jpg" />
-    <None Remove="Resources\Pictures\Girl.jpg" />
-    <None Remove="Resources\Pictures\HDBackground.jpg" />
-    <None Remove="Resources\Pictures\HostWaiting.jpg" />
-    <None Remove="Resources\Pictures\Immortal.jpg" />
-    <None Remove="Resources\Pictures\Mafia.jpg" />
-    <None Remove="Resources\Pictures\ServerList.jpg" />
-    <None Remove="Resources\Pictures\Settings.jpg" />
-    <None Remove="Resources\Pictures\Tutorial.jpg" />
-    <None Remove="Resources\WaitBackground.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Pictures\Settings.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Include="Resources\Pictures\Assassin.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Background.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Blood.png" />
-    <EmbeddedResource Include="Resources\Pictures\City.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Civilian.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Detective.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Doctor.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Don.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Girl.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\HDBackground.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\HostWaiting.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Immortal.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Mafia.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\ServerList.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\Tutorial.jpg" />
-    <EmbeddedResource Include="Resources\Pictures\WaitBackground.jpg" />
-  </ItemGroup>
-
-  <ItemGroup>
     <PackageReference Include="Acr.UserDialogs" Version="7.0.4" />
     <PackageReference Include="Behaviors.Forms" Version="1.4.0" />
     <PackageReference Include="Newtonsoft.Json" Version="12.0.1" />
@@ -61,21 +17,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Compile Update="Resources\Localization\Strings.Designer.cs">
-      <DesignTime>True</DesignTime>
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Strings.resx</DependentUpon>
-    </Compile>
+    <ProjectReference Include="..\..\RCG.Main\RCG.Main.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Compile Update="Views\HostTemplateView.xaml.cs">
       <DependentUpon>HostTemplateView.xaml</DependentUpon>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
-    <EmbeddedResource Update="Resources\Localization\Strings.resx">
-      <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
-    </EmbeddedResource>
     <EmbeddedResource Update="Views\HostTemplateView.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

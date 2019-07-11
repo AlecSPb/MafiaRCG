@@ -1,5 +1,5 @@
-﻿using RCG.Infrastructure;
-using RCG.Models.Enums;
+﻿using RCG.Main.Infrastructure;
+using RCG.Main.Models.Enums;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -25,7 +25,7 @@ namespace RCG.Models
             this.role = role;
             lm = LocalizationManager.GetLocalizationManager();
             lm.PropertyChanged += CultureChanged;
-            Image = ImageSource.FromResource(string.Concat("RCG.Resources.Pictures.", role.ToString(), ".jpg"), typeof(RoleVisual).Assembly);
+            Image = ImageSource.FromResource(string.Concat("RCG.Main.Resources.Pictures.", role.ToString(), ".jpg"), typeof(Role).Assembly);
             Update();
 
         }
